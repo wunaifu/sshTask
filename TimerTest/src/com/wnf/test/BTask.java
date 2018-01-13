@@ -14,9 +14,9 @@ import java.util.Date;
 @Component
 public class BTask implements IBTask {
 
-    @Scheduled(cron="0/5 * * * * ?")
+    @Scheduled(cron="0/30 * * * * ?")
     public void bTask() {
-        System.out.println(new SimpleDateFormat("HH:mm:ss").format(new Date()) + "********B任务每5秒执行一次进入测试");
+        System.out.println(new SimpleDateFormat("HH:mm:ss").format(new Date()) + "********B任务每30秒执行一次进入测试");
     }
 
 }
